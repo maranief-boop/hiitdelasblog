@@ -2,14 +2,34 @@
 import PageMeta from "../components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
-import AboutTheTheme from "../components/AboutTheTheme.astro";
 import { SITE_TITLE } from "../config";
 ---
 
 <PageLayout>
-  <PageMeta title={`${SITE_TITLE} | Web Ninja`} slot="meta" />
-  <Fragment slot="main">
-    <Intro />
-    <AboutTheTheme />
-  </Fragment>
+  <PageMeta title={`${SITE_TITLE} | Ciência e Performance Feminina`} slot="meta" />
+  <section slot="main">
+    <div class="mb-8">
+      <h1 class="font-bold text-4xl md:text-5xl tracking-tight pt-4 pb-2 overflow-hidden">
+        <span class="bg-gradient-to-br from-[#8a2be2] to-[#9d4edd] bg-clip-text text-transparent">
+          HIIT Delas
+        </span>
+      </h1>
+      <p class="text-2xl pb-4">Ciência, Fisiologia e Treino de Alta Intensidade para Mulheres.</p>
+    </div>
+    
+    <div class="prose prose-sleek max-w-none">
+      <p>
+        Bem-vinda ao seu portal de autoridade sobre a performance feminina. Aqui, o treino não é apenas suor; é <strong>ciência aplicada</strong>. 
+      </p>
+      <p>
+        Diferente das abordagens genéricas, o <strong>HIIT Delas</strong> foca na fisiologia única do corpo feminino: 
+        entendendo o ciclo hormonal, o metabolismo e como o exercício de alta intensidade pode ser o maior aliado 
+        no emagrecimento e na saúde endócrina.
+      </p>
+      <p>
+        Explore nossos artigos sobre <strong>Ciência</strong> para entender o "porquê" de cada movimento, 
+        e confira nossa seção de <strong>Treinos</strong> para aplicar protocolos validados na prática.
+      </p>
+    </div>
+  </section>
 </PageLayout>

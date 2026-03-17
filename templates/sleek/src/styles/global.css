@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-    Tailwind colors listed here: https://tailwindcss.com/docs/customizing-colors
+/* Tailwind colors listed here: https://tailwindcss.com/docs/customizing-colors
     
     Why colors are written in rgb format (255 255 255) instead of hex (#ffffff)
     https://tailwindcss.com/docs/customizing-colors#using-css-variables 
@@ -12,8 +11,8 @@
 
     /* light theme */
     .theme-sleek {
-        /* Tailwind orange-500 #f97316 */
-        --color-primary-main: 249 115 22;
+        /* Roxo HIIT Vibrante #8a2be2 */
+        --color-primary-main: 138 43 226;
 
         /* Tailwind gray-700 #374151 */
         --color-text-body: 55 65 81;
@@ -23,8 +22,8 @@
         --color-text-bold: 55 65 81;
         /* Tailwind gray-500 #6b7280 */
         --color-text-muted: 107 114 128;
-        /* Tailwind orange-500 #f97316 */
-        --color-text-link: 249 115 22;
+        /* Roxo HIIT para Links */
+        --color-text-link: 138 43 226;
         /* black */
         --color-text-code: 0 0 0;
         /* black */
@@ -32,20 +31,20 @@
 
         /* white */
         --color-bg-body: 255 255 255;
-        /* Tailwind orange-50 #fff7ed */
-        --color-bg-code: 255 247 237;
-        /* Tailwind amber-200 #fde68a */
-        --color-bg-selection: 253 230 138;
+        /* Roxo Suave para Fundo de Código */
+        --color-bg-code: 243 232 255;
+        /* Lilás claro para seleção */
+        --color-bg-selection: 233 213 255;
 
-        /* Tailwind orange-100 #ffedd5 */
-        --color-border-code: 255 237 213;
+        /* Borda de código em lilás */
+        --color-border-code: 216 180 254;
 
     }
 
     /* dark theme */
     .theme-sleek.dark {
-        /* Tailwind yellow-400 #facc15 */
-        --color-primary-main: 250 204 21;
+        /* Roxo mais claro para contraste no Dark Mode #9d4edd */
+        --color-primary-main: 157 78 221;
 
         /* Tailwind stone-300 #d6d3d1 */
         --color-text-body: 214 211 209;
@@ -55,8 +54,8 @@
         --color-text-bold: 255 255 255;
         /* Tailwind stone-400 #a8a29e */
         --color-text-muted: 168 162 158;
-        /* Tailwind yellow-400 #facc15 */
-        --color-text-link: 250 204 21;
+        /* Roxo Claro para Links no Dark */
+        --color-text-link: 157 78 221;
         /* black */
         --color-text-code: 255 255 255;
         /* black */
@@ -64,13 +63,13 @@
 
         /* #0e141b */
         --color-bg-body: 14 20 27;
-        /* Tailwind yellow-500 #eab308 */
-        --color-bg-code: 234 179 8;
-        /* Tailwind yellow-300 #fde047 */
-        --color-bg-selection: 253 224 71;
+        /* Fundo de código roxo escuro */
+        --color-bg-code: 60 7 118;
+        /* Seleção em roxo médio */
+        --color-bg-selection: 94 3 189;
 
-        /* Tailwind yellow-100 #fef9c3 */
-        --color-border-code: 254 243 199;
+        /* Borda de código roxa */
+        --color-border-code: 123 44 191;
     }
 
     :root {
@@ -106,8 +105,7 @@
         color: theme('colors.text.selection');
     }
 
-    /* 
-        if you want an anchor tag to not have this style, 
+    /* if you want an anchor tag to not have this style, 
         just add a class `unset` to it. 
     */
     a:not(.unset) {
