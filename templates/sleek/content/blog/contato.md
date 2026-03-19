@@ -2,7 +2,7 @@
 external: false
 title: "Contato"
 description: "Entre em contato com a equipe do HIIT Delas."
-date: 2026-03-19
+date: 2000-01-01
 draft: false
 ---
 
