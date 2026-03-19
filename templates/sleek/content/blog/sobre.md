@@ -3,7 +3,7 @@ external: false
 title: "Sobre o HIIT Delas"
 description: "Conheça a história por trás do portal e nossa autoridade em fitness."
 date: 2026-03-19
-draft: true
+draft: false
 ---
 
 # Sobre o HIIT Delas
