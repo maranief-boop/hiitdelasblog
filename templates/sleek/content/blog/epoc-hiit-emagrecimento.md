@@ -3,6 +3,7 @@ external: false
 title: "EPOC: Como o HIIT queima gordura mesmo após o treino"
 description: "Entenda a fisiologia do consumo excessivo de oxigênio pós-exercício e por que a intensidade vence o volume."
 date: 2026-03-16
+tags: ["ciencia"]
 ---
 
 Muitas mulheres acreditam que a queima de gordura só acontece enquanto elas estão em movimento. A ciência da fisiologia nos mostra que, no caso do HIIT, o maior benefício pode estar no que acontece **depois** que você para de treinar.
