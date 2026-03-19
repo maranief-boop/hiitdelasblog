@@ -16,9 +16,9 @@ import DarkModeToggle from "./DarkModeToggle.astro";
         <li><HeaderLink href="/">Home</HeaderLink></li>
         <li><HeaderLink href="/blog">Ciência</HeaderLink></li>
         <li><HeaderLink href="/blog">Treinos</HeaderLink></li>
-        <li><HeaderLink href="/blog/sobre/">Sobre</HeaderLink></li>
-        <li><HeaderLink href="/blog/contato/">Contato</HeaderLink></li>
-        <li><HeaderLink href="/blog/privacidade/">Privacidade</HeaderLink></li>
+        <li><a class="unset" href="/blog/sobre/">Sobre</a></li>
+        <li><a class="unset" href="/blog/contato/">Contato</a></li>
+        <li><a class="unset" href="/blog/privacidade/">Privacidade</a></li>
       </ul>
     </section>
   </nav>
@@ -33,5 +33,11 @@ import DarkModeToggle from "./DarkModeToggle.astro";
     display: grid;
     align-items: center;
     grid-template-columns: minmax(0, 1fr) minmax(0, max-content);
+  }
+  .unset {
+    text-decoration: none;
+  }
+  .unset:hover {
+    color: var(--color-text-link);
   }
 </style>
