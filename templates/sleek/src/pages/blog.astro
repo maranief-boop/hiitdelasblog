@@ -12,6 +12,8 @@ const posts = await readAll({
 
 const sortedPosts = posts
   .filter((p) => p.frontmatter.draft !== true)
+  // FILTRO ADICIONADO ABAIXO: Remove as páginas institucionais da lista central
+  .filter((p) => !["sobre", "contato", "privacidade"].includes(p.slug))
   .sort(
     (a, b) =>
       new Date(b.frontmatter.date).valueOf() -
