@@ -1,23 +1,27 @@
 ---
-export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+export interface Props extends astroHTML.HTMLAttributes<"a"> {}
 
 const { href, class: className, ...props } = Astro.props;
-const path = Astro.url.pathname.replace(/\/$/, "");
+const { pathname } = Astro.url;
 
-const isHome = href === '/' && path === '';
-const isOtherPages = typeof href === "string" && href.length > 1
-    ? path.substring(1).startsWith(href.substring(1))
-    : false;
-const isActive = isHome || isOtherPages
-
+// Esta linha garante que "/blog/sobre" ou "/blog/sobre/" ativem o link "Sobre"
+const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 ---
-<!-- DO NOT FORMAT. IT ADDS AN EXTRA SPACE ON RENDERED CONTENT. -->
-<a
-  href={href}
-  class:list={[
-    className,
-    { "show": isActive },
-    "unset animated-link",
-  ]}
-  {...props}
-><slot /></a>
+
+<a href={href} class:list={[className, { active: isActive }]} {...props}>
+  <slot />
+</a>
+
+<style>
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  a.active {
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #8a2be2; /* Cor roxa */
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+  }
+</style>
