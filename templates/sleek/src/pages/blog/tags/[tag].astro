@@ -1,0 +1,77 @@
+---
+import { readAll } from "../../../lib/markdoc/read";
+import { blog } from "../../../lib/markdoc/frontmatter.schema";
+import PageLayout from "../../../layouts/PageLayout.astro";
+import PageMeta from "../../../components/PageMeta.astro";
+import { SITE_TITLE } from "../../../config";
+
+export async function getStaticPaths() {
+  const posts = await readAll({
+    directory: "blog",
+    frontmatterSchema: blog,
+  });
+
+  // Coleta todas as tags únicas dos posts
+  const allTags = new Set();
+  posts.forEach((post) => {
+    post.frontmatter.tags?.forEach((tag) => allTags.add(tag.toLowerCase()));
+  });
+
+  return Array.from(allTags).map((tag) => {
+    return {
+      params: { tag },
+      props: { 
+        tag,
+        posts: posts.filter((post) => 
+          post.frontmatter.tags?.map(t => t.toLowerCase()).includes(tag)
+        ) 
+      },
+    };
+  });
+}
+
+const { tag, posts } = Astro.props;
+const title = tag.charAt(0).toUpperCase() + tag.slice(1);
+
+const sortedPosts = posts
+  .filter((p) => p.frontmatter.draft !== true)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
+---
+
+<PageLayout>
+  <PageMeta title={`${title} | ${SITE_TITLE}`} slot="meta" />
+  <section slot="main">
+    <h1 class="text-3xl font-bold mb-8">Categoria: {title}</h1>
+    <ul>
+      {
+        sortedPosts.map((post) => {
+          const formattedDate = new Date(
+            post.frontmatter.date
+          ).toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+          return (
+            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
+              <div class="title">
+                <a href={`/blog/${post.slug}`} class="unset hover:text-text-link">
+                  {post.frontmatter.title}
+                </a>
+              </div>
+              <div class="text-text-muted text-sm italic">
+                <time datetime={post.frontmatter.date.toISOString()}>
+                  {formattedDate}
+                </time>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </section>
+</PageLayout>
