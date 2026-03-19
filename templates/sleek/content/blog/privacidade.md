@@ -2,7 +2,7 @@
 external: false
 title: "Política de Privacidade"
 description: "Saiba como o HIIT Delas protege seus dados e garante sua segurança."
-date: 2026-03-19
+date: 2000-01-01
 draft: false
 ---
 
