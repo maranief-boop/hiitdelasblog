@@ -12,7 +12,7 @@ Tem alguma dúvida, sugestão ou deseja fazer uma parceria? Estamos à disposiç
 
 Você pode entrar em contato conosco diretamente pelo e-mail:
 
-**E-mail:** [SEU E-MAIL AQUI]
+**E-mail:** fisiologiaexplorada@gmail.com
 
 Respondemos a todas as mensagens em um prazo de até 48 horas úteis.
 
