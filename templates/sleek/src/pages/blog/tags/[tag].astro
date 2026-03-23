@@ -6,12 +6,13 @@ import PageMeta from "../../../components/PageMeta.astro";
 import { SITE_TITLE } from "../../../config";
 
 export async function getStaticPaths() {
+  // Busca todos os posts na pasta content/blog configurada no seu projeto
   const posts = await readAll({
     directory: "blog",
     frontmatterSchema: blog,
   });
 
-  // Criamos um conjunto único de tags limpando espaços e casos
+  // Criamos um Set para armazenar tags únicas e limpas (sem espaços e minúsculas)
   const allTags = new Set();
   posts.forEach((post) => {
     const postTags = post.frontmatter.tags;
@@ -22,17 +23,18 @@ export async function getStaticPaths() {
     }
   });
 
-  // Geramos as páginas para cada tag encontrada
+  // Mapeamos cada tag encontrada para uma página dinâmica
   return Array.from(allTags).map((tag) => {
+    const tagString = String(tag);
     const filteredPosts = posts.filter((post) => {
-      const tags = post.frontmatter.tags;
-      return Array.isArray(tags) && 
-             tags.map(t => t.trim().toLowerCase()).includes(String(tag));
+      const postTags = post.frontmatter.tags;
+      return Array.isArray(postTags) && 
+             postTags.map(t => t.trim().toLowerCase()).includes(tagString);
     });
 
     return {
-      params: { tag: String(tag) },
-      props: { tag: String(tag), posts: filteredPosts },
+      params: { tag: tagString },
+      props: { tag: tagString, posts: filteredPosts },
     };
   });
 }
@@ -40,7 +42,7 @@ export async function getStaticPaths() {
 const { tag, posts } = Astro.props;
 const title = tag.charAt(0).toUpperCase() + tag.slice(1);
 
-// Ordena por data (mais recente primeiro) e remove rascunhos
+// Ordenação por data e filtro de rascunhos
 const sortedPosts = posts
   .filter((p) => p.frontmatter.draft !== true)
   .sort(
@@ -53,12 +55,16 @@ const sortedPosts = posts
 <PageLayout>
   <PageMeta title={`${title} | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    <div class="mb-8">
-      <h1 class="text-4xl font-bold text-text-bold">Categoria: {title}</h1>
-      <p class="text-text-muted mt-2">Explorando conteúdos sobre {tag}.</p>
+    <div class="mb-10">
+      <h1 class="text-4xl font-extrabold text-text-bold tracking-tight">
+        Categoria: <span class="text-primary-500">{title}</span>
+      </h1>
+      <p class="text-text-muted mt-2 text-lg">
+        Artigos selecionados sobre {tag}.
+      </p>
     </div>
 
-    <ul class="unset space-y-6">
+    <ul class="unset space-y-8">
       {
         sortedPosts.length > 0 ? (
           sortedPosts.map((post) => {
@@ -70,14 +76,16 @@ const sortedPosts = posts
               day: "numeric",
             });
             return (
-              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] gap-1 md:gap-4 items-center border-b border-gray-100 pb-4 hover:bg-gray-50/50 transition-colors rounded-lg p-2">
+              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] gap-2 md:gap-6 items-center border-b border-gray-100 pb-6 group">
                 <div class="title">
-                  <a href={`/blog/${post.slug}`} class="unset text-xl font-semibold hover:text-text-link">
+                  <a href={`/blog/${post.slug}`} class="unset text-2xl font-bold group-hover:text-text-link transition-colors">
                     {post.frontmatter.title}
                   </a>
-                  <p class="text-sm text-text-muted line-clamp-1 mt-1">{post.frontmatter.description}</p>
+                  <p class="text-text-muted line-clamp-2 mt-2 leading-relaxed">
+                    {post.frontmatter.description}
+                  </p>
                 </div>
-                <div class="text-text-muted text-sm italic whitespace-nowrap">
+                <div class="text-text-muted text-sm italic font-mono whitespace-nowrap bg-gray-50 px-3 py-1 rounded">
                   <time datetime={post.frontmatter.date.toISOString()}>
                     {formattedDate}
                   </time>
@@ -86,9 +94,9 @@ const sortedPosts = posts
             );
           })
         ) : (
-          <div class="p-8 text-center bg-gray-50 rounded-lg">
-            <p class="text-text-muted">Nenhum artigo encontrado nesta categoria ainda.</p>
-            <a href="/blog" class="text-text-link underline mt-4 inline-block">Ver todos os posts</a>
+          <div class="py-12 text-center bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
+            <p class="text-text-muted text-lg">Ainda não temos artigos nesta categoria.</p>
+            <a href="/blog" class="text-text-link font-bold mt-4 inline-block hover:underline">Ver todos os conteúdos →</a>
           </div>
         )
       }
