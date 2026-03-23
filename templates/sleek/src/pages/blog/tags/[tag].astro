@@ -6,100 +6,54 @@ import PageMeta from "../../../components/PageMeta.astro";
 import { SITE_TITLE } from "../../../config";
 
 export async function getStaticPaths() {
-  // Busca todos os posts na pasta content/blog configurada no seu projeto
   const posts = await readAll({
     directory: "blog",
     frontmatterSchema: blog,
   });
 
-  // Criamos um Set para armazenar tags únicas e limpas (sem espaços e minúsculas)
+  // Criamos uma lista de tags única de forma bem direta
   const allTags = new Set();
   posts.forEach((post) => {
-    const postTags = post.frontmatter.tags;
-    if (Array.isArray(postTags)) {
-      postTags.forEach((tag) => {
-        if (tag) allTags.add(tag.trim().toLowerCase());
-      });
+    if (post.frontmatter.tags) {
+      post.frontmatter.tags.forEach((tag) => allTags.add(tag.toLowerCase().trim()));
     }
   });
 
-  // Mapeamos cada tag encontrada para uma página dinâmica
   return Array.from(allTags).map((tag) => {
-    const tagString = String(tag);
-    const filteredPosts = posts.filter((post) => {
-      const postTags = post.frontmatter.tags;
-      return Array.isArray(postTags) && 
-             postTags.map(t => t.trim().toLowerCase()).includes(tagString);
-    });
-
     return {
-      params: { tag: tagString },
-      props: { tag: tagString, posts: filteredPosts },
+      params: { tag: tag },
+      props: { 
+        tag: tag,
+        posts: posts.filter((post) => 
+          post.frontmatter.tags?.some(t => t.toLowerCase().trim() === tag)
+        ) 
+      },
     };
   });
 }
 
 const { tag, posts } = Astro.props;
-const title = tag.charAt(0).toUpperCase() + tag.slice(1);
+const title = tag.toUpperCase();
 
-// Ordenação por data e filtro de rascunhos
 const sortedPosts = posts
-  .filter((p) => p.frontmatter.draft !== true)
-  .sort(
-    (a, b) =>
-      new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
-  );
+  .filter((p) => !p.frontmatter.draft)
+  .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 ---
 
 <PageLayout>
   <PageMeta title={`${title} | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    <div class="mb-10">
-      <h1 class="text-4xl font-extrabold text-text-bold tracking-tight">
-        Categoria: <span class="text-primary-500">{title}</span>
-      </h1>
-      <p class="text-text-muted mt-2 text-lg">
-        Artigos selecionados sobre {tag}.
-      </p>
-    </div>
-
-    <ul class="unset space-y-8">
-      {
-        sortedPosts.length > 0 ? (
-          sortedPosts.map((post) => {
-            const formattedDate = new Date(
-              post.frontmatter.date
-            ).toLocaleDateString("pt-BR", {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            });
-            return (
-              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] gap-2 md:gap-6 items-center border-b border-gray-100 pb-6 group">
-                <div class="title">
-                  <a href={`/blog/${post.slug}`} class="unset text-2xl font-bold group-hover:text-text-link transition-colors">
-                    {post.frontmatter.title}
-                  </a>
-                  <p class="text-text-muted line-clamp-2 mt-2 leading-relaxed">
-                    {post.frontmatter.description}
-                  </p>
-                </div>
-                <div class="text-text-muted text-sm italic font-mono whitespace-nowrap bg-gray-50 px-3 py-1 rounded">
-                  <time datetime={post.frontmatter.date.toISOString()}>
-                    {formattedDate}
-                  </time>
-                </div>
-              </li>
-            );
-          })
-        ) : (
-          <div class="py-12 text-center bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
-            <p class="text-text-muted text-lg">Ainda não temos artigos nesta categoria.</p>
-            <a href="/blog" class="text-text-link font-bold mt-4 inline-block hover:underline">Ver todos os conteúdos →</a>
-          </div>
-        )
-      }
+    <h1 class="text-3xl font-bold mb-6">Categoria: {title}</h1>
+    <ul>
+      {sortedPosts.map((post) => (
+        <li class="mb-4 border-b pb-4">
+          <a href={`/blog/${post.slug}`} class="text-xl font-bold hover:text-blue-600">
+            {post.frontmatter.title}
+          </a>
+          <p class="text-gray-600 text-sm mt-1">{post.frontmatter.description}</p>
+        </li>
+      ))}
     </ul>
+    {sortedPosts.length === 0 && <p>Nenhum post encontrado.</p>}
   </section>
 </PageLayout>
