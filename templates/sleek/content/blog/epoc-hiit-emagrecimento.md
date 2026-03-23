@@ -4,8 +4,7 @@ title: "EPOC: Como o HIIT queima gordura mesmo após o treino"
 description: "Entenda a fisiologia do consumo excessivo de oxigênio pós-exercício e por que a intensidade vence o volume no emagrecimento feminino."
 date: 2026-03-23
 tags: ["ciencia"]
-# USE O CAMINHO COMPLETO COM O DOMÍNIO PARA TESTAR:
-ogImagePath: "https://hiitdelas.com.br/images/blog/capa-epoc-hiit-delas.webp"
+ogImagePath: "/images/blog/capa-epoc-hiit-delas.webp"
 draft: false
 ---
 
