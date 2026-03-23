@@ -2,7 +2,7 @@
 external: false
 title: "EPOC: Como o HIIT queima gordura mesmo após o treino"
 description: "Entenda a fisiologia do consumo excessivo de oxigênio pós-exercício e por que a intensidade vence o volume."
-date: 2026-03-16
+date: 2026-03-23
 tags: ["ciencia"]
 draft: false
 ---
