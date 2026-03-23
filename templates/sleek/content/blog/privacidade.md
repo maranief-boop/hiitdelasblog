@@ -1,29 +1,24 @@
 ---
 external: false
 title: "Política de Privacidade"
-description: "Saiba como o HIIT Delas protege seus dados e garante sua segurança."
-date: 2000-01-01
-draft: false
+description: "Saiba como o HIIT Delas protege seus dados e utiliza cookies para melhorar sua experiência."
+date: 2026-03-23
 ---
 
 # Política de Privacidade
 
-No **HIIT Delas**, a privacidade dos nossos visitantes é uma prioridade. Este documento detalha quais tipos de informações pessoais são recebidas e coletadas e como as utilizamos.
+No **HIIT Delas**, a privacidade dos nossos visitantes é uma prioridade extrema. Este documento detalha os tipos de informações pessoais que recebemos e coletamos e como as utilizamos.
 
-### 1. Coleta de Informações
-Coletamos informações básicas de navegação (como endereço IP e tipo de navegador) através de cookies para melhorar sua experiência no site. Se você entrar em contato conosco por e-mail, as informações fornecidas serão usadas apenas para responder à sua solicitação.
+## Coleta de Dados e Cookies
+Como a maioria dos blogs profissionais, utilizamos cookies para armazenar informações sobre as preferências dos visitantes e personalizar o conteúdo da página com base no tipo de navegador.
 
-### 2. Cookies e Web Beacons
-O HIIT Delas utiliza cookies para armazenar informações sobre as preferências dos visitantes. Além disso, exibimos anúncios do Google AdSense, que também podem utilizar cookies (como o cookie DART) para veicular anúncios baseados em suas visitas a este e outros sites na internet.
+## Google AdSense e DoubleClick DART Cookie
+O Google, como fornecedor de terceiros, utiliza cookies para exibir anúncios neste site. O uso do cookie DART permite que o Google exiba anúncios para você com base em sua visita ao HIIT Delas e a outros sites na Internet. 
 
-### 3. Google AdSense
-Como parceiro do Google, utilizamos o sistema deles para exibir anúncios. O Google utiliza cookies para servir anúncios neste site. Você pode optar por não utilizar o cookie DART visitando a Política de Privacidade da rede de conteúdo e anúncios do Google.
+Você pode desativar o uso do cookie DART visitando a política de privacidade da rede de conteúdo e anúncios do Google.
 
-### 4. Links de Terceiros
-Este site pode conter links para outros sites (como referências científicas ou produtos). Não nos responsabilizamos pelas políticas de privacidade desses sites externos.
+## Segurança
+Empregamos medidas de segurança para proteger suas informações, garantindo que sua navegação pelo nosso portal de ciência e performance seja segura.
 
-### 5. Contato
-Para qualquer dúvida sobre nossa política, entre em contato através da nossa página de [Contato](/blog/contato).
-
----
-*Atualizado em 19 de março de 2026.*
+## Contato
+Se precisar de mais informações ou tiver dúvidas sobre nossa política de privacidade, sinta-se à vontade para nos contatar através da nossa página de [Contato](/blog/contato).
