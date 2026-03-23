@@ -4,6 +4,7 @@ title: "Mitos e Verdades: O HIIT vai me deixar 'masculinizada'?"
 description: "Desvendamos os principais medos das mulheres sobre o treino de alta intensidade e o que a ciência realmente diz."
 date: 2026-03-16
 tags: ["ciencia"]
+draft: false
 ---
 
 Ainda existe muito preconceito e desinformação rondando as salas de musculação e os centros de treinamento. Hoje, vamos usar a fisiologia para derrubar os principais mitos sobre o HIIT para mulheres.
