@@ -11,25 +11,28 @@ export async function getStaticPaths() {
     frontmatterSchema: blog,
   });
 
+  // Criamos um conjunto único de tags limpando espaços e casos
   const allTags = new Set();
   posts.forEach((post) => {
-    // Adicionei uma verificação mais robusta aqui
-    if (post.frontmatter.tags && Array.isArray(post.frontmatter.tags)) {
-      post.frontmatter.tags.forEach((tag) => {
-        allTags.add(tag.trim().toLowerCase());
+    const postTags = post.frontmatter.tags;
+    if (Array.isArray(postTags)) {
+      postTags.forEach((tag) => {
+        if (tag) allTags.add(tag.trim().toLowerCase());
       });
     }
   });
 
+  // Geramos as páginas para cada tag encontrada
   return Array.from(allTags).map((tag) => {
+    const filteredPosts = posts.filter((post) => {
+      const tags = post.frontmatter.tags;
+      return Array.isArray(tags) && 
+             tags.map(t => t.trim().toLowerCase()).includes(String(tag));
+    });
+
     return {
-      params: { tag: tag },
-      props: { 
-        tag: tag,
-        posts: posts.filter((post) => 
-          post.frontmatter.tags?.map(t => t.trim().toLowerCase()).includes(tag)
-        ) 
-      },
+      params: { tag: String(tag) },
+      props: { tag: String(tag), posts: filteredPosts },
     };
   });
 }
@@ -37,6 +40,7 @@ export async function getStaticPaths() {
 const { tag, posts } = Astro.props;
 const title = tag.charAt(0).toUpperCase() + tag.slice(1);
 
+// Ordena por data (mais recente primeiro) e remove rascunhos
 const sortedPosts = posts
   .filter((p) => p.frontmatter.draft !== true)
   .sort(
@@ -49,8 +53,12 @@ const sortedPosts = posts
 <PageLayout>
   <PageMeta title={`${title} | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    <h1 class="text-3xl font-bold mb-8">Categoria: {title}</h1>
-    <ul class="unset">
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold text-text-bold">Categoria: {title}</h1>
+      <p class="text-text-muted mt-2">Explorando conteúdos sobre {tag}.</p>
+    </div>
+
+    <ul class="unset space-y-6">
       {
         sortedPosts.length > 0 ? (
           sortedPosts.map((post) => {
@@ -62,13 +70,14 @@ const sortedPosts = posts
               day: "numeric",
             });
             return (
-              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start border-b border-gray-200 pb-2">
+              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] gap-1 md:gap-4 items-center border-b border-gray-100 pb-4 hover:bg-gray-50/50 transition-colors rounded-lg p-2">
                 <div class="title">
-                  <a href={`/blog/${post.slug}`} class="unset hover:text-text-link font-medium">
+                  <a href={`/blog/${post.slug}`} class="unset text-xl font-semibold hover:text-text-link">
                     {post.frontmatter.title}
                   </a>
+                  <p class="text-sm text-text-muted line-clamp-1 mt-1">{post.frontmatter.description}</p>
                 </div>
-                <div class="text-text-muted text-sm italic">
+                <div class="text-text-muted text-sm italic whitespace-nowrap">
                   <time datetime={post.frontmatter.date.toISOString()}>
                     {formattedDate}
                   </time>
@@ -77,7 +86,10 @@ const sortedPosts = posts
             );
           })
         ) : (
-          <p>Nenhum artigo encontrado nesta categoria.</p>
+          <div class="p-8 text-center bg-gray-50 rounded-lg">
+            <p class="text-text-muted">Nenhum artigo encontrado nesta categoria ainda.</p>
+            <a href="/blog" class="text-text-link underline mt-4 inline-block">Ver todos os posts</a>
+          </div>
         )
       }
     </ul>
