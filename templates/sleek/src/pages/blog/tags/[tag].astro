@@ -11,19 +11,23 @@ export async function getStaticPaths() {
     frontmatterSchema: blog,
   });
 
-  // Coleta todas as tags únicas dos posts
   const allTags = new Set();
   posts.forEach((post) => {
-    post.frontmatter.tags?.forEach((tag) => allTags.add(tag.toLowerCase()));
+    // Adicionei uma verificação mais robusta aqui
+    if (post.frontmatter.tags && Array.isArray(post.frontmatter.tags)) {
+      post.frontmatter.tags.forEach((tag) => {
+        allTags.add(tag.trim().toLowerCase());
+      });
+    }
   });
 
   return Array.from(allTags).map((tag) => {
     return {
-      params: { tag },
+      params: { tag: tag },
       props: { 
-        tag,
+        tag: tag,
         posts: posts.filter((post) => 
-          post.frontmatter.tags?.map(t => t.toLowerCase()).includes(tag)
+          post.frontmatter.tags?.map(t => t.trim().toLowerCase()).includes(tag)
         ) 
       },
     };
@@ -46,31 +50,35 @@ const sortedPosts = posts
   <PageMeta title={`${title} | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
     <h1 class="text-3xl font-bold mb-8">Categoria: {title}</h1>
-    <ul>
+    <ul class="unset">
       {
-        sortedPosts.map((post) => {
-          const formattedDate = new Date(
-            post.frontmatter.date
-          ).toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          });
-          return (
-            <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
-              <div class="title">
-                <a href={`/blog/${post.slug}`} class="unset hover:text-text-link">
-                  {post.frontmatter.title}
-                </a>
-              </div>
-              <div class="text-text-muted text-sm italic">
-                <time datetime={post.frontmatter.date.toISOString()}>
-                  {formattedDate}
-                </time>
-              </div>
-            </li>
-          );
-        })
+        sortedPosts.length > 0 ? (
+          sortedPosts.map((post) => {
+            const formattedDate = new Date(
+              post.frontmatter.date
+            ).toLocaleDateString("pt-BR", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            });
+            return (
+              <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start border-b border-gray-200 pb-2">
+                <div class="title">
+                  <a href={`/blog/${post.slug}`} class="unset hover:text-text-link font-medium">
+                    {post.frontmatter.title}
+                  </a>
+                </div>
+                <div class="text-text-muted text-sm italic">
+                  <time datetime={post.frontmatter.date.toISOString()}>
+                    {formattedDate}
+                  </time>
+                </div>
+              </li>
+            );
+          })
+        ) : (
+          <p>Nenhum artigo encontrado nesta categoria.</p>
+        )
       }
     </ul>
   </section>
