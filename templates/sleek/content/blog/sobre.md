@@ -12,7 +12,6 @@ Bem-vinda ao **HIIT Delas**. Este não é apenas mais um blog de fitness; é o s
 
 Nosso propósito é traduzir a complexidade da ciência em resultados práticos para mulheres que buscam eficiência máxima através do HIIT (Treino Intervalado de Alta Intensidade).
 
-![Treino HIIT Feminino](/images/quem-somos-hiit-delas.webp)
 
 ### Por que o HIIT Delas?
 
