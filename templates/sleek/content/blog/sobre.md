@@ -1,17 +1,23 @@
 ---
 external: false
 title: "Sobre o HIIT Delas"
-description: "Conheça a história por trás do portal e nossa autoridade em fitness."
-date: 2000-01-01
-draft: false
+description: "Conheça a ciência, a fisiologia e a missão por trás do portal de autoridade em HIIT feminino."
+date: 2026-03-23
+ogImagePath: "/images/quem-somos-hiit-delas.webp"
 ---
 
-# Sobre o HIIT Delas
+# Ciência e Performance Feminina
 
-Bem-vinda ao **HIIT Delas**, um espaço criado para mulheres que buscam transformar sua saúde física e mental através da eficiência do movimento.
+Bem-vinda ao **HIIT Delas**. Este não é apenas mais um blog de fitness; é o seu portal de autoridade sobre a fisiologia do exercício aplicada ao corpo feminino.
 
-Eu sou o fundador do projeto, profissional de Educação Física atuante na rede estadual de ensino de São Paulo. Com anos de experiência na área da saúde e do movimento humano, estabeleci o HIIT Delas com uma missão clara: descomplicar o treinamento de alta intensidade para o público feminino.
+Nosso propósito é traduzir a complexidade da ciência em resultados práticos para mulheres que buscam eficiência máxima através do HIIT (Treino Intervalado de Alta Intensidade).
 
-Como especialista e pai, entendo profundamente os desafios de conciliar uma rotina profissional exigente com os cuidados da família, sem abrir mão do autocuidado. O HIIT Delas nasce da minha paixão por fisiologia do exercício e da necessidade de oferecer protocolos validados que entreguem resultados reais no menor tempo possível.
+![Treino HIIT Feminino](/images/quem-somos-hiit-delas.webp)
 
-Nossa missão é traduzir a ciência do exercício em treinos de HIIT práticos e seguros, focados nas necessidades e na performance do corpo feminino.
+### Por que o HIIT Delas?
+
+Entendemos que o corpo feminino possui nuances únicas. Do ciclo hormonal ao impacto metabólico do efeito **EPOC**, cada informação que compartilhamos é fundamentada em evidências. 
+
+Aqui, o treino não é apenas suor; é **ciência aplicada**. Nossa missão é capacitar você com o conhecimento necessário para que cada minuto de exercício conte.
+
+**Intensidade com propósito. Ciência com resultado.**
