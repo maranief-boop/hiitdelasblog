@@ -1,6 +1,5 @@
 ---
-/* 
-  This layout is used in pages that render markdoc content
+/* This layout is used in pages that render markdoc content
   - pages/blog/[slug].astro
 */
 
@@ -17,10 +16,11 @@ import Footer from "../components/Footer.astro";
 export interface Props {
   title: string;
   date: Date;
+  ogImagePath?: string; // Adicionamos a variável da imagem aqui
 }
 
-const { title, date } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString("en-us", {
+const { title, date, ogImagePath } = Astro.props;
+const formattedDate = new Date(date).toLocaleDateString("pt-BR", { // Mudamos para PT-BR
   year: "numeric",
   month: "short",
   day: "numeric",
@@ -28,9 +28,8 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
 ---
 
 <!DOCTYPE html>
-<html class="theme-sleek" lang="en">
+<html class="theme-sleek" lang="pt-BR">
   <head>
-    <!-- Global Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="generator" content="Blogster" />
@@ -48,7 +47,18 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
     <main id="main">
       <section class="blog-post prose max-w-none prose-sleek">
         <h1 class="m-0 mb-[0.25em]">{title}</h1>
-        <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
+        <time class="block mb-[1em] text-text-muted">{formattedDate}</time>
+        
+        {ogImagePath && (
+          <div class="mb-8">
+            <img 
+              src={ogImagePath} 
+              alt={title} 
+              class="w-full h-auto rounded-xl shadow-lg object-cover max-h-[450px]" 
+            />
+          </div>
+        )}
+
         <slot name="content" />
       </section>
     </main>
