@@ -10,19 +10,31 @@ import DarkModeToggle from "./DarkModeToggle.astro";
   >
     Skip to content
   </a>
-  <nav>
-    <section class="text-text-bold">
-      <ul class="unset flex gap-4 [&>li]:p-0">
-        <li><HeaderLink href="/">Home</HeaderLink></li>
-        <li><HeaderLink href="/blog/tags/ciencia/">Ciência</HeaderLink></li>
-        <li><HeaderLink href="/blog/tags/treino/">Treinos</HeaderLink></li>
-        <li><HeaderLink href="/blog/sobre">Sobre</HeaderLink></li>
-        <li><HeaderLink href="/blog/contato">Contato</HeaderLink></li>
-        <li><HeaderLink href="/blog/privacidade">Privacidade</HeaderLink></li>
-      </ul>
+  
+  <div class="flex items-center gap-6">
+    <a href="/" class="unset flex items-center">
+      <img src="/logo-completo.png" alt="HIIT Delas Logo" class="h-10 w-auto" />
+    </a>
+
+    <nav>
+      <section class="text-text-bold">
+        <ul class="unset flex gap-4 [&>li]:p-0">
+          <li><HeaderLink href="/">Home</HeaderLink></li>
+          <li><HeaderLink href="/blog/tags/ciencia/">Ciência</HeaderLink></li>
+          <li><HeaderLink href="/blog/tags/treinos/">Treinos</HeaderLink></li>
+          <li><HeaderLink href="/blog/sobre">Sobre</HeaderLink></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <div class="justify-self-end py-2 flex items-center content-center gap-4">
+    <section class="hidden md:block text-text-muted text-sm">
+       <ul class="unset flex gap-3">
+         <li><HeaderLink href="/blog/privacidade">Privacidade</HeaderLink></li>
+         <li><HeaderLink href="/blog/contato">Contato</HeaderLink></li>
+       </ul>
     </section>
-  </nav>
-  <div class="justify-self-end py-2 flex items-center content-center">
     <DarkModeToggle />
   </div>
 </header>
@@ -33,5 +45,6 @@ import DarkModeToggle from "./DarkModeToggle.astro";
     display: grid;
     align-items: center;
     grid-template-columns: minmax(0, 1fr) minmax(0, max-content);
+    padding: 1rem 0;
   }
 </style>
