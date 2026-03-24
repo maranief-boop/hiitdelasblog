@@ -3,7 +3,7 @@ external: false
 title: "HIIT e o Ciclo Hormonal: Como Treinar a Favor da sua Fisiologia"
 description: "Aprenda a ajustar a intensidade do seu treino HIIT conforme as fases do ciclo menstrual para otimizar resultados e saúde hormonal."
 date: 2026-03-23
-ogImagePath: "/images/blog/capa-ciclo-hormonal.webp"
+ogImagePath: "/images/capa-ciclo-hormonal.webp"
 tags: ["ciencia"]
 ---
 
