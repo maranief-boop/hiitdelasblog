@@ -3,6 +3,7 @@ external: false
 title: "Mitos e Verdades: O HIIT vai me deixar com corpo 'masculinizado'?"
 description: "Desvendamos os principais medos das mulheres sobre o treino de alta intensidade e o que a fisiologia realmente diz sobre hipertrofia feminina."
 date: 2026-03-23
+ogImagePath: "/images/capa-mitos-hiit.webp"
 tags: ["ciencia"]
 draft: false
 ---
