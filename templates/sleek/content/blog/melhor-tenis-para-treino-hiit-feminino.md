@@ -4,7 +4,7 @@ title: "Tênis para HIIT: Como escolher o calçado certo para evitar lesões"
 description: "Saiba quais características técnicas um tênis de HIIT precisa ter para garantir estabilidade, amortecimento e performance nos seus treinos."
 date: 2026-03-27
 ogImagePath: "/images/capa-tenis-hiit-premium.webp"
-tags: ["equipamento", "seguranca", "hiit feminino"]
+tags: ["ciencia"]
 ---
 
 # Tênis para HIIT: Por que o seu calçado pode estar sabotando seus resultados?
