@@ -1,18 +1,18 @@
-/* eslint-disable turbo/no-undeclared-env-vars */
 import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
+// https://astro.build/config
 export default defineConfig({
-  // O segredo está aqui: o domínio oficial SEMPRE
-  site: "https://hiitdelas.com.br",
-  
-  server: { port: 3000 },
-  
+  site: "https://hiitdelas.com.br", // Verifique se o seu domínio está certo aqui
   integrations: [
-    sitemap(), 
+    mdx(),
+    sitemap(), // Deixe apenas assim, sem configurações extras dentro dos parênteses
     tailwind({
-      config: { applyBaseStyles: false },
+      config: {
+        applyBaseStyles: false,
+      },
     }),
   ],
 });
