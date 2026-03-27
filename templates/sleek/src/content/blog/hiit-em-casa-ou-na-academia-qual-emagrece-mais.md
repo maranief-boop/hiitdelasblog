@@ -7,7 +7,7 @@ ogImagePath: "/images/capa-casa-vs-academia-premium.webp"
 tags: ["hiit", "treino"]
 ---
 
-# HIIT em casa emagrece igual academia? 
+# HIIT em casa emagrece igual academia?  
 
 Se você é mulher e tem uma rotina corrida, o tempo é o seu recurso mais escasso. A dúvida "será que preciso ir à academia para ter resultados?" é o que impede muitas de começarem.
 
