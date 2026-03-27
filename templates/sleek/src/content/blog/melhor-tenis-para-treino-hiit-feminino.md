@@ -5,7 +5,7 @@ description: "Saiba quais características técnicas um tênis de HIIT precisa t
 date: 2026-03-24
 ogImagePath: "/images/capa-tenis-hiit-premium.webp"
 tags: ["treino"]
----
+--- 
 
 # Tênis para HIIT: Por que o seu calçado pode estar sabotando seus resultados?
 
