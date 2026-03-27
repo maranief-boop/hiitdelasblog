@@ -4,7 +4,7 @@ title: "HIIT em casa emagrece igual academia? A ciência por trás do resultado"
 description: "Entenda por que o treino HIIT em casa é eficaz para o emagrecimento feminino e como a intensidade supera o uso de aparelhos de academia."
 date: 2026-03-27
 ogImagePath: "/images/capa-casa-vs-academia-premium.webp"
-tags: ["emagrecimento", "hiit em casa", "treino feminino"]
+tags: ["ciencia"]
 ---
 
 # HIIT em casa emagrece igual academia? 
