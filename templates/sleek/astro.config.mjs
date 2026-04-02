@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap"; // <-- Adicionamos esta linha
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,6 +11,6 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    sitemap(), // <-- Adicionamos esta linha aqui
+    sitemap(),
   ],
 });
