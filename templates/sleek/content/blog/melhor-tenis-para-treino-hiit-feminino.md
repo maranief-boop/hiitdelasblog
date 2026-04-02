@@ -5,7 +5,7 @@ description: "Saiba como escolher o calçado ideal para treinos de alta intensid
 date: 2026-03-20
 draft: false
 ogImagePath: "/images/melhor-tenis-hiit-premium.webp"
-tags: ["Treinos"]
+tags: ["treinos"]
 ---
 
 # Melhor Tênis para Treino HIIT Feminino: Como Escolher?
