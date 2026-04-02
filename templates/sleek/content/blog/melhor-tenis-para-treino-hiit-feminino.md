@@ -49,4 +49,4 @@ O melhor tênis é aquele que se adapta ao seu formato de pé e ao seu nível de
 ---
 
 ### 💡 Próximo Passo
-Agora que você já sabe qual tênis usar, que tal colocar ele para teste? Confira nosso guia: [HIIT em casa emagrece igual academia?](/blog/hiit-em-casa-ou-na-academia-qual-emagrece-mais)
+Agora que você já sabe qual tênis usar, que tal colocar ele para teste? Confira nosso guia: [HIIT em casa emagrece igual academia?](/blog/hiit-em-casa-ou-na-academia)
