@@ -4,9 +4,10 @@ title: "HIIT para Mulheres 40+: Como Vencer a Menopausa com Intensidade"
 description: "Entenda como o treino HIIT atua na regulação hormonal e na preservação da massa magra em mulheres após os 40 anos. Ciência e fisiologia aplicada."
 date: 2026-04-06
 draft: false
-ogImagePath: "/placeholder-og.jpg"
+ogImagePath: "/images/melhor-tenis-hiit-premium.webp"
 tags: ["ciência"]
 ---
+
 A partir dos 40 anos, o corpo feminino atravessa uma das transições fisiológicas mais complexas: o climatério. A queda gradual de estrogênio e a resistência à insulina tornam o acúmulo de gordura visceral mais comum. No entanto, a ciência do exercício aponta que o **HIIT (High-Intensity Interval Training)** é uma das ferramentas mais poderosas para modular essa fase.
 
 Diferente dos treinos aeróbicos contínuos de longa duração, o HIIT provoca adaptações metabólicas específicas que preservam a saúde da mulher madura.
