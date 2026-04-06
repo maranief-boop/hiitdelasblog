@@ -4,7 +4,7 @@ title: "HIIT para Mulheres 40+: Como Vencer a Menopausa com Intensidade"
 description: "Entenda como o treino HIIT atua na regulação hormonal e na preservação da massa magra após os 40 anos."
 date: 2026-04-06
 draft: false
-ogImagePath: "/images/melhor-tenis-hiit-premium.webp"
+ogImagePath: "/images/post-hiit-mulheres-40-mais.webp"
 tags: ["treinos"]
 ---
 
