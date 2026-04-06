@@ -4,7 +4,6 @@ title: "O Que Comer Antes do HIIT? O Guia da Nutrição Pré-Treino"
 description: "Descubra os melhores alimentos para performar no HIIT sem desconforto gástrico. Entenda a relação entre glicogênio e alta intensidade."
 date: 2026-04-06
 draft: false
-heroImage: "/images/guia-nutricao-pre-hiit.jpg"
 ogImagePath: "/images/guia-nutricao-pre-hiit.jpg"
 tags: ["ciência"]
 ---
