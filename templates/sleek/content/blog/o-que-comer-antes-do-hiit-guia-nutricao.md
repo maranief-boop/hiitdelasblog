@@ -5,7 +5,7 @@ description: "Descubra os melhores alimentos para performar no HIIT sem desconfo
 date: 2026-04-06
 draft: false
 ogImagePath: "/images/guia-nutricao-pre-hiit.webp"
-tags: ["ciência"]
+tags: ["ciencia"]
 ---
 
 Diferente de uma caminhada leve ou de um treino de endurance longo, o **HIIT (High-Intensity Interval Training)** é uma atividade predominantemente glicolítica. Isso significa que, para atingir as zonas de frequência cardíaca exigidas, seu corpo precisa de combustível rápido e eficiente: o **glicogênio**. 
