@@ -8,7 +8,7 @@ ogImagePath: "/images/guia-nutricao-pre-hiit.webp"
 tags: ["ciência"]
 ---
 
-Diferente de uma caminhada leve ou de um treino de endurance longo, o **HIIT (High-Intensity Interval Training)** é uma atividade predominantemente glicolítica. Isso significa que, para atingir as zonas de frequência cardíaca exigidas, seu corpo precisa de combustível rápido e eficiente: o **glicogênio**.
+Diferente de uma caminhada leve ou de um treino de endurance longo, o **HIIT (High-Intensity Interval Training)** é uma atividade predominantemente glicolítica. Isso significa que, para atingir as zonas de frequência cardíaca exigidas, seu corpo precisa de combustível rápido e eficiente: o **glicogênio**. 
 
 Saber o que comer antes da sessão é a diferença entre bater um recorde pessoal ou interromper o treino por tontura ou náuseas.
 
