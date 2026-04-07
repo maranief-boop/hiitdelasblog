@@ -7,7 +7,7 @@ draft: false
 ogImagePath: "/images/suplementacao-hiit.webp"
 tags: ["ciência"]
 ---
-
+ 
 No HIIT, trabalhamos em zonas de alta intensidade onde o corpo busca energia rápida. Para otimizar esse processo, alguns suplementos têm evidência científica robusta para melhorar a performance.
 
 ## 1. Creatina: Explosão Pura
