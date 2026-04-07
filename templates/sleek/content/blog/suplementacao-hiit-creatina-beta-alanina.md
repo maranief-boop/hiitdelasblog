@@ -5,7 +5,7 @@ description: "Descubra como os suplementos certos podem aumentar sua potência n
 date: 2026-04-07
 draft: false
 ogImagePath: "/images/suplementacao-hiit.webp"
-tags: ["ciência"]
+tags: ["ciencia"]
 ---
  
 No HIIT, trabalhamos em zonas de alta intensidade onde o corpo busca energia rápida. Para otimizar esse processo, alguns suplementos têm evidência científica robusta para melhorar a performance.
