@@ -5,7 +5,7 @@ description: "Não tem tempo? Aprenda um protocolo de HIIT de apenas 10 minutos 
 date: 2026-04-07
 draft: false
 ogImagePath: "/images/hiit-10-minutos-rapido.webp"
-tags: ["treino"]
+tags: ["treinos"]
 ---
 
 A maior barreira para o emagrecimento não é a falta de vontade, é a percepção de falta de tempo. No entanto, a ciência prova que a **intensidade supera o volume** quando o objetivo é queima de gordura.
