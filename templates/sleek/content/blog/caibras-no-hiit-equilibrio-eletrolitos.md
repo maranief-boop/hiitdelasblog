@@ -5,7 +5,7 @@ description: "Entenda por que as cãibras aparecem em treinos intensos e como a 
 date: 2026-04-09
 draft: false
 ogImagePath: "/images/hiit-caibras-saude.webp"
-tags: ["ciência"]
+tags: ["ciencia"]
 ---
 
 Uma cãibra súbita durante um tiro de alta intensidade pode não apenas interromper seu treino, mas causar lesões. No HIIT, a perda de líquidos através do suor é rápida, levando consigo minerais essenciais conhecidos como eletrólitos.
