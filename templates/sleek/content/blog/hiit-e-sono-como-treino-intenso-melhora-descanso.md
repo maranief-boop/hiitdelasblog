@@ -17,4 +17,4 @@ O HIIT ajuda a regular o ciclo circadiano ao elevar a temperatura corporal de fo
 Ao "descarregar" o estresse durante o treino de alta intensidade, você evita que o cortisol (hormônio do alerta) permaneça alto durante a noite, permitindo que o corpo entre mais facilmente nas fases de sono profundo e REM.
 
 ---
-*Para um descanso completo, não esqueça da [recuperação ativa](/blog/hiit-emagrecimento-epoc) nos dias de intervalo.*
+*Para um descanso completo, não esqueça da [recuperação ativa](/blog/hiit-epoc-emagrecimento) nos dias de intervalo.*
