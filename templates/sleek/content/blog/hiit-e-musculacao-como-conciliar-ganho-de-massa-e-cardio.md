@@ -10,10 +10,11 @@ tags: ["treinos"]
 
 Uma das maiores dúvidas no universo fitness feminino é se o HIIT pode "queimar" a massa muscular conquistada na musculação. A resposta curta é: **não**, desde que você saiba como periodizar.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/animate.webp" alt="Demonstração de treino de força e intensidade" style="border-radius: 8px; max-width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">A união da força com a explosão gera os melhores resultados estéticos.</p>
-</div>
+![Demonstração de treino de força e intensidade](/images/animate.webp)
+
+*A união da força com a explosão gera os melhores resultados estéticos.*
+
+## O Efeito de Interferência
 
 ## O Efeito de Interferência
 A ciência do exercício estuda o "treinamento concorrente". Para evitar que o cardio interfira na sinalização de hipertrofia, o ideal é dar um intervalo de pelo menos 6 a 24 horas entre a sessão de força e o HIIT de alta intensidade.
