@@ -14,7 +14,6 @@ Uma das maiores dúvidas no universo fitness feminino é se o HIIT pode "queimar
 
 *A união da força com a explosão gera os melhores resultados estéticos.*
 
-## O Efeito de Interferência
 
 ## O Efeito de Interferência
 A ciência do exercício estuda o "treinamento concorrente". Para evitar que o cardio interfira na sinalização de hipertrofia, o ideal é dar um intervalo de pelo menos 6 a 24 horas entre a sessão de força e o HIIT de alta intensidade.
