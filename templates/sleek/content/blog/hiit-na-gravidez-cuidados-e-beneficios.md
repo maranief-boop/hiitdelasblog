@@ -21,4 +21,4 @@ Para mulheres que já eram praticantes de HIIT antes da gravidez, a continuidade
 *Lembre-se: Cada gestação é única. A liberação médica é indispensável antes de iniciar qualquer protocolo de intensidade.*
 
 ---
-*Quer começar devagar? Confira nosso [treino de HIIT em casa para iniciantes](/blog/treino-hiit-20-minutos-iniciantes.md).*
+*Quer começar devagar? Confira nosso [treino de HIIT em casa para iniciantes](/blog/treino-hiit-20-minutos-iniciantes).*
