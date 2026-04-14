@@ -17,4 +17,4 @@ A intensidade do HIIT é o que traz resultados, mas também é o que faz muitas 
 3. **Foque na Vitória Pós-Treino:** Lembre-se da sensação de dever cumprido.
 
 ---
-*Precisa de inspiração? Confira nosso [guia de HIIT para iniciantes](/blog/hiit-em-casa).*
+*Precisa de inspiração? Confira nosso [guia de HIIT para iniciantes](/blog/treino-hiit-20-minutos-iniciantes).*
