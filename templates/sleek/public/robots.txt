@@ -1,0 +1,7 @@
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://hiitdelas.com.br/sitemap-index.xml
