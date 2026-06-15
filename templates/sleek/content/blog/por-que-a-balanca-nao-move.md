@@ -4,7 +4,7 @@ description: "Descubra como as oscilações de estrogênio e progesterona altera
 createdAt: "2026-06-15"
 tags: ["ciencia"]
 draft: false
-ogImagePath: "/images/hiit-caibras-saude.webp"
+external: false
 ---
 
 Você já passou por aquela semana em que seguiu a dieta à risca, entregou tudo nos treinos de alta intensidade (HIIT) e, ao subir na balança, levou um soco no estômago: **o peso subiu ou estagnou**? 
@@ -31,7 +31,7 @@ Uma janela curta de 3 a 4 dias no meio do ciclo, onde o estrogênio atinge o seu
 * **O que acontece no metabolismo:** Você se sente forte, disposta e com a libido alta. No entanto, o estrogênio muito alto altera a frouxidão ligamentar.
 * **O HIIT aqui:** A força está no topo, mas a coordenação e a estabilidade articular podem vacilar sutilmente. Mantenha a alta intensidade, mas preste muita atenção na execução biomecânica dos movimentos (como agachamentos saltados ou burpees).
 
-### 3. Fase Lútea: O Mistério da Balança Subir
+### 3. Fase Lútea: O Mysterio da Balança Subir
 Esta é a fase que antecede a próxima menstruação (a famosa zona da TPM). Aqui, o estrogênio cai e a **progesterona** assume o controle.
 
 * **O que acontece no metabolismo:** A progesterona é um hormônio catabólico. Ela aumenta a temperatura corporal central (fazendo você suar mais rápido, dando a falsa impressão de que está gastando muito mais energia) e diminui a tolerância ao esforço de alta intensidade.
@@ -45,7 +45,7 @@ Esta é a fase que antecede a próxima menstruação (a famosa zona da TPM). Aqu
 Se você faz um treino HIIT intenso na fase lútea e se pesa no dia seguinte, a balança pode registrar um aumento. **Isso NÃO é gordura.** 
 
 1. **Retenção por Progesterona:** O seu corpo está estocando água devido às alterações de sódio e fluidos causadas pelo balanço hormonal.
-2. **Inflamação Muscular Benéfica:** O HIIT gera microlesões musculares saudáveis. Para reparar o músculo, o corpo envia água e nutrientes para a região. Músculo recuperando retém água temporariamente.
+2. **Inflamação Muscular Benéfica:** O HIIT gera microlesões musculares saudáveis. Para reparar o muscle, o corpo envia água e nutrientes para a região. Músculo recuperando retém água temporariamente.
 
 Se você se pesar nessa fase e se desesperar, a tendência é cortar calorias drasticamente ou abandonar o treino, gerando um ciclo de frustração crônica.
 
