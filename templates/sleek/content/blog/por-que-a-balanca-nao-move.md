@@ -4,6 +4,7 @@ description: "Descubra como as oscilações de estrogênio e progesterona altera
 createdAt: "2026-06-15"
 tags: ["ciencia"]
 draft: false
+ogImagePath: "/images/hiit-caibras-saude.webp"
 ---
 
 Você já passou por aquela semana em que seguiu a dieta à risca, entregou tudo nos treinos de alta intensidade (HIIT) e, ao subir na balança, levou um soco no estômago: **o peso subiu ou estagnou**? 
