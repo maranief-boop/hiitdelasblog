@@ -6,7 +6,11 @@ Allow: /
 
 User-agent: *
 Allow: /
-Disallow: /amazonbot
-Disallow: /gptbot
+Disallow: /Amazonbot
+Disallow: /Applebot-Extended
+Disallow: /Bytespider
+Disallow: /CCBot
+Disallow: /ClaudeBot
+Disallow: /GPTBot
 
 Sitemap: https://hiitdelas.com.br/sitemap-index.xml
