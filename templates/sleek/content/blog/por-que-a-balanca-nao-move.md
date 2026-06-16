@@ -1,10 +1,10 @@
 ---
+external: false
 title: "Por Que a Balança Não Move? Como o Seu Ciclo Hormonal Afeta os Resultados do HIIT"
 description: "Descubra como as oscilações de estrogênio e progesterona alteram a retenção de líquidos e influenciam os seus resultados no treino de alta intensidade."
 createdAt: "2026-06-15"
 tags: ["ciencia"]
 draft: false
-external: false
 ---
 
 Você já passou por aquela semana em que seguiu a dieta à risca, entregou tudo nos treinos de alta intensidade (HIIT) e, ao subir na balança, levou um soco no estômago: **o peso subiu ou estagnou**? 
