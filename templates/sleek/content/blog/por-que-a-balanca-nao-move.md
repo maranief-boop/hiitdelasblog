@@ -4,6 +4,7 @@ title: "Por Que a Balança Não Move? Como o Seu Ciclo Hormonal Afeta os Resulta
 description: "Descubra como as oscilações de estrogênio e progesterona alteram a retenção de líquidos e influenciam os seus resultados no treino de alta intensidade."
 date: 2026-06-16T00:00:00.000Z
 draft: false
+ogImagePath	/images/balança-hiit.webp
 tags: ["ciencia"]
 ---
 
